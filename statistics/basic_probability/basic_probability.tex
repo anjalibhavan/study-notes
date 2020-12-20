@@ -1,0 +1,115 @@
+\documentclass{article}
+\input{../preamble.tex}
+\title{Basic Probability Theory}
+\date{07-10-2020}
+\author{Anjali Bhavan}
+
+\begin{document}
+\maketitle
+\section{Basic concepts}
+\begin{itemize}
+    \item Some terms: possible outcomes, sample space etc.
+    \item Random variables
+    \item Cond. Probability
+\end{itemize}
+\section{Some Terms}
+\begin{itemize}
+    \item outcome: possible result of an experiment 
+    \item sample space: set of all possible outcomes
+    \item event: a set of outcomes of an experiment (subset of sample
+    space)
+    \item event space: set of all possible events 
+    (power set of sample space?)
+\end{itemize}
+\section{Random Variables}
+\begin{definition}[Random variables]
+A random variable is a function from the sample space to R: $\Omega \rightarrow \mathbb{R}$ 
+\end{definition}
+
+There are two types of random variables: discrete and continuous.
+\begin{itemize}
+    \item Discrete:
+    \begin{enumerate}[label=(\alph*)]
+        \item Uniform: all outcomes have same probability
+        \item Bernoulli: two possible outcomes
+        \item Binomial: two possible outcomes, $n$ trials
+        \item Multinomial: $k$ possible outcomes, $n$ trials
+        \item Poisson: big $n$, small $p$ approx. of binomial
+    \end{enumerate}
+    \item Continuous:
+    \begin{enumerate}[label=(\alph*)]
+        \item continuous uniform distribution
+        \item Gaussian (normal distribution)
+    \end{enumerate}
+\end{itemize}
+
+\begin{definition}[Random vector]
+Finite dimensional vector of random variables: 
+$X = [X_{1},..., X_{k}]$.
+
+$P(x) = P(x_{1},...,x_{n}) = P(X_{1} = x_{1},...X_{n} = x_{n}))$
+\end{definition}
+\section{Probability}
+Three types:
+\begin{itemize}
+    \item Joint Probability: prob. of $X=x$ and $Y=y$ happening
+    together
+    \item Conditional Probability: prob. of $X=x$ given $Y=y$
+    \item Marginal Probability: prob. of $X=x \forall Y$.
+\end{itemize}
+
+Chain rule: Calculate joint prob from marginal and condl. prob
+\begin{equation}
+    P(A,B) = P(A)*P(B|A) = P(B)*P(A|B)
+\end{equation}
+
+Calculating marginal prob from joint prob:
+\begin{equation}
+    P(A) = \sum_{B}P(A,B)
+\end{equation}
+
+Bayes' Rule: 
+\begin{equation}
+    P(B|A) = \frac{P(A,B)}{P(A)} = \frac{P(A|B)P(B)}{P(A)}
+\end{equation}
+$A$ will be the constant factor in the question i.e. whose prob doesnt
+change.
+
+Important Bayes rule eqn (used in machine translation):
+
+(arg max over $y$ means whichever $y$ gives max value of expression)
+\begin{equation}
+    y^{*} = \arg \max P(y|x) \\
+    = \arg \max \frac{P(x|y)P(y)}{P(x)} \\
+    = \arg \max P(x|y)P(y)
+\end{equation}
+(in the third step $P(X)$ is removed because constant term. We are
+interested in best value of $y$.)
+\section{Independence}
+ \begin{definition}[Conditional Independence]
+     Once we know $C$, the value of $A$ doesn't affect $B$ and 
+     vice versa.
+
+     $P(A,B|C) = P(A|C)P(B|C)$
+
+     $P(A|B,C) = P(A|C)$
+
+     $P(B|A,C) = P(B|C)$
+ \end{definition}
+
+Why do we make independence assumption in language models despite 
+it not being true? because space and time of model. it becomes large
+and unwieldy.
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
