@@ -1,10 +1,56 @@
 \documentclass{article}
 \input{../preamble.tex}
 \title{Random Variables and Expectation}
-\date{19-12-2020}
+\date{20-12-2020}
 \author{Anjali Bhavan}
 
 \begin{document}
 \maketitle
+
+\section{Random variables}
+\begin{definition}[Random variable]
+    A function that assigns a real value $ X(w) $ to every outcome $ w $ in the sample space.
+\end{definition}
+Two types: discrete and continuous. 
+\begin{enumerate}
+  \item Distribution function for discrete RV: 
+  \begin{equation*}
+  F(x) = \sum_{i:x_{i} \leq x}^{} p(x_{i})
+  \end{equation*}
+  where $ p(x_{i}) $ is the probability mass function (basically probability value).
+  \item Distribution function for continuous RV:
+  \begin{equation*}
+  F(x) = \int_{-\infty}^{x} f(x) \,dx 
+  \end{equation*}
+  where $ f(x) $ is the probability density function.
+\end{enumerate}
+
+\section{Jointly distributed random variables}
+For two RVs $ X $ and $ Y $ associated with the same random experiment,
+\begin{enumerate}
+  \item when $ X $ and $ Y $ are discrete: \\
+  Probability mass function:
+  \begin{equation*}
+    p(x_{i}, y_{i}) = P(X = x_{i}, Y = y_{i})
+  \end{equation*} 
+  and
+  \begin{equation*}
+    \sum_{x}^{} \sum_{y}^{} p(x_{i}, y_{j}) = 1 
+  \end{equation*}
+  Marginal probability mass functions are given by: 
+  \begin{equation*}
+    p(x_{i}) = P(X = x_{i}) = \sum_{j}^{}P(X = x_{i}, Y = y_{j}) = \sum_{j}^{}p_{ij}
+  \end{equation*}
+  \begin{equation*}
+    p(y_{j}) = P(Y = y_{j}) = \sum_{i}^{}P(X = x_{i}, Y = y_{j}) = \sum_{i}^{}p_{ij}
+  \end{equation*}
+
+\item when $ X $ and $ Y $ are continuous:
+\begin{equation*}
+x
+\end{equation*}
+
+\end{enumerate}
+
 
 \end{document}
