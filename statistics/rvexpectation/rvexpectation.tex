@@ -45,12 +45,90 @@ For two RVs $ X $ and $ Y $ associated with the same random experiment,
     p(y_{j}) = P(Y = y_{j}) = \sum_{i}^{}P(X = x_{i}, Y = y_{j}) = \sum_{i}^{}p_{ij}
   \end{equation*}
 
-\item when $ X $ and $ Y $ are continuous:
+\item when $ X $ and $ Y $ are continuous: \\
+The joint probability density function is given by $ f(x, y) $, and
 \begin{equation*}
-x
+\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x,y) \,dx  \,dy = 1
 \end{equation*}
 
+The marginal p.d.fs are given by:
+\begin{equation*}
+f_{X}(x) = \int_{-\infty}^{\infty} f(x, y) \,dy
+\end{equation*}
+\begin{equation*}
+    f_{Y}(y) = \int_{-\infty}^{\infty} f(x, y) \,dx
+\end{equation*}
+
+\textbf{Important:} if $ C = \{(x,y): a \leq x \leq b, c \leq y \leq d\} $, then
+\begin{equation*}
+P((X,Y) \in C) = \int_{a}^{b} \int_{c}^{d} f(x,y) \,dx  \,dy
+\end{equation*}
 \end{enumerate}
+\section{Expectation}
+\begin{definition}[Expectation]
+    Expectation of a random variable $ X $ is the weighted average of all the possible values $ X $
+    can take. For a discrete RV, it is given by:
+    \begin{equation*}
+    E(X) = \sum_{i}^{}p_{i}x_{i}
+    \end{equation*}
+    And for a continuous RV, 
+    \begin{equation*}
+    E(X) = \int_{-\infty}^{\infty}xf(x)  \,dx 
+    \end{equation*}
+\end{definition}
 
+\textbf{Note:} Addition property of expectation is valid for any two random variables $X$ and $Y$, but multiplication
+  property is valid only if $X$ and $Y$ are independent. Additive property states that $ E(X+Y) = E(X) + E(Y) $.
+  Multiplication property states that $ E(XY) = E(X)E(Y) $ iff $X$ and $Y$ are independent.
+\textbf{Note: } Variance is given by $ E(X^{2}) - E(X)^{2} $.
 
+\subsection{Covariance}
+\begin{definition}[Covariance]
+    Covariance of two random variables $X$ and $Y$ is a measure of how the two are related to each other. It is given by:
+    \begin{equation*}
+        \begin{split}
+            Cov(X, Y) & = E(X - \bar{X})(Y - \bar{Y}) \\
+            & = E(XY - X\bar{Y} - Y\bar{X} + \bar{X}\bar{Y})  \\
+            & = E(XY) - \bar{Y}E(X) - \bar{X}E(Y) + \bar{X}\bar{Y} \\
+            & = E(XY) - E(X)E(Y)
+        \end{split}
+    \end{equation*}
+\end{definition}
+Positive covariance means $X$ and $Y$ are increasing or decreasing together, negative means the opposite.
+When $X$ and $Y$ are independent, covariance is 0. But converse is not always true.
+
+Some important formulae:
+\begin{itemize}
+  \item $ Var(aX+b) = a^{2}Var(X) $
+  \item $ Var(aX+bY) = a^{2}Var(X) + b^{2}Var(Y) + 2abCov(X, Y) $
+\end{itemize}
+
+\section{Moment generating function}
+The moment generating function of a RV $ X $ is given by: 
+\begin{equation*}
+M(X) = E[e^{tX}] = \begin{cases}
+        \sum_{x}^{}e^{tx}p(x) & X is discrete \\
+        \int_{-\infty}^{\infty} e^{tx}f(x)\,dx & X is continuous
+    \end{cases}
+\end{equation*}
+Moments are usually measures for a function's graph shape. Particular moments have particular values: for instance,
+the zeroth moment of a random variable is 1, the first the mean, the second the variance, the third the skewness and fourth the kurtosis.
+MGF can describe a distribution uniquely if it exists. \\
+If $X$ and $Y$ are two RVs, their sum's MGF is given by the product of the individual MGFs. \\
+\textbf{Important:} The MGF of a RV about any arbitrary point can be derived from the MGF about origin by:
+\begin{equation*}
+M_{a}(t) = E[e^{t(x-a)}] = e^{-at}E[e^{tx}] = e^{-at}M_{o}(t)
+\end{equation*}
+
+\section{Chebyshev's Inequality}
+This basically shows that no more than a certain fraction of values can lie more than a few standard deviations away from the mean.
+Specifically, no more than $ 1/k^{2} $  of the distribution's values can be more than $ k $ standard deviations away from the mean.
+Mathematically, let $ X $ be a random variable with mean $ \mu $ and variance $ \sigma^{2} $. Then,
+\begin{equation*}
+P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^{2}}
+\end{equation*}
+This is used to prove the weak law of large numbers, which states:
+\begin{theorem} The probability that the average of a sequence of i.i.d. RVs differs from its mean by more than $ \epsilon $ tends to 0 as 
+  the number of terms tends to infinity, provided the RVs have finite variance.
+\end{theorem}
 \end{document}
