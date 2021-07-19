@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\usepackage[top=2.5cm, left=3cm, right=3cm, bottom=4.0cm]{geometry}
+\usepackage{hyperref}
+
+\newcommand{\tablespace}{\\[1.25mm]}
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}         % = `top' strut
+\newcommand\tstrut{\rule{0pt}{2.0ex}}         % = `top' strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}   % = `bottom' strut
+
+\begin{document}
+\section{Backprop}
+The main neural network equations are as follows:
+\begin{equation}
+\begin{split}
+z^l & = w^la^{l-1} + b^l \\
+a^l & = \sigma(z^l) \\
+C & = \frac{1}{2} \| a^l - y \|^{2}
+\end{split}
+\end{equation}
+The equations for backprop are as follows. The idea is to see the change in cost function wrt weights and biases.
+Below equations use the notations of \href{https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi}{3Blue1Brown series}. 
+The changes are given by:
+\begin{equation}
+\begin{split}
+\frac{\partial C}{\partial w^{l}} & = \frac{\partial C}{\partial a^{l}}\frac{\partial a^{l}}{\partial z^{l}}\frac{\partial z^{l}}{\partial w^{l}} \\
+\frac{\partial C}{\partial b^{l}} & = \frac{\partial C}{\partial a^{l}}\frac{\partial a^{l}}{\partial z^{l}}\frac{\partial z^{l}}{\partial b^{l}} \\
+\end{split}
+\end{equation}
+Now, $ \frac{\partial C}{\partial a^{l}} = a^{l} - y $ (assuming quadratic cost function). 
+And $ \frac{\partial a^{l}}{\partial z^{l}} = \sigma'(z^{l}) $.
+Also, $ \frac{\partial z^{l}}{\partial w^{l}} = a^{l-1} $, while $ \frac{\partial z^{l}}{\partial b^{l}} = 1 $.     
+
+Rewriting the equations acc. to the notations in 
+the \href{http://neuralnetworksanddeeplearning.com/chap2.html}{NN\&DL Book Chapter 2}.
+
+Consider
+\begin{equation}
+\begin{split}
+    \delta^{l} & = \frac{\partial C}{\partial a^{l}}\frac{\partial a^{l}}{\partial z^{l}} \\
+    & = \frac{\partial C}{\partial a^{l}}\odot \sigma'(z^{l})
+\end{split}
+\end{equation}
+The equation for the error $ \delta^{l} $ wrt error of the next layer is
+\begin{equation}
+    \delta^{l} = ((w^{l+1})^T\delta^{l+1})\odot \sigma'(z^{l})
+\end{equation}
+This back-propagates the gradient values through the network.
+We use the equations in $ (2) $ to calculate changes in cost function. The 
+change in cost function wrt bias is given by 
+\begin{equation}
+\begin{split}
+    \frac{\partial C}{\partial b^{l}} & = \frac{\partial C}{\partial a^{l}}\frac{\partial a^{l}}{\partial z^{l}} \\
+    & = \delta^{l} (from 3)
+\end{split}
+\end{equation}
+Since $ \frac{\partial z^{l}}{\partial b^{l}} = 1 $. Similarly calculating change in cost function wrt
+weights:
+\begin{equation}
+\begin{split}
+    \frac{\partial C}{\partial w^{l}} & = a^{l-1}\delta^l \\
+\end{split}
+\end{equation}
+Since $ \frac{\partial z^{l}}{\partial w^{l}} = a^{l-1} $. 
+
+(Proof for eqn 4 to be done later.)
+
+Backprop algo:
+\begin{itemize}
+  \item Input set of training exs
+  \item For each training ex:
+  \begin{itemize}
+    \item  Feedfwd: calculate z, a
+    \item Error: calculate $ \delta $ using (3)
+    \item Backprop: For each of the steps backwards, calculate $ \delta $ using (4)
+  \end{itemize}
+  \item Gradient descent: for each of the steps backwards, update:
+  \begin{equation*}
+  \begin{split}
+  w^l & = w^l - \frac{\eta}{m} \delta^l(a^{l-1})^T \\
+  b^l & = b^l - \frac{\eta}{m} \delta^l
+  \end{split}
+  \end{equation*}
+\end{itemize}
+\end{document}
+
+
