@@ -1,0 +1,35 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "FasBookSkull",
+      "FasPersonDotsFromLine",
+      "FasPersonHiking",
+      "LiCar",
+      "FarFaceGrimace"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false
+  },
+  "Project ideas and open source orgs.md": "LiTornado",
+  "Notion templates and pics.md": "FarNoteSticky",
+  "Blair Waldorf dresses.md": "FasPersonDress",
+  "DC Planning.md": "FasPlaneDeparture",
+  "Courses I wanna do at some point.md": "FasBookOpenReader",
+  "Jobs.md": "FarFaceGrimace",
+  "Driving notes.md": "LiCar",
+  "List of hikes completed.md": "FasPersonHiking",
+  "Musings": "FasPersonDotsFromLine",
+  "Books": "FasBookSkull"
+}

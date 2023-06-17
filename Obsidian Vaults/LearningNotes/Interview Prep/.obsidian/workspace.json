@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "21cd0e398b7a73b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "60f18bd2232bdf67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61ca73677665e36f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Model Descriptions/Model Descriptions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f8b715a208608510",
+    "type": "split",
+    "children": [
+      {
+        "id": "04bd76bb057a809d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3d3d7ed8b93e102",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "866306fd89ca0962",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7c4cb9d0df33a933",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7e90cef34530ca39",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b61ceb2d77f913b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "061f1bbbc1b055b3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Machine Learning/Model Descriptions/Model Descriptions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "21a9cb213d7a4adf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Machine Learning/Model Descriptions/Model Descriptions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "82ba2a3266921958",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4e28694cd521389c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Machine Learning/Model Descriptions/Model Descriptions.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "61ca73677665e36f",
+  "lastOpenFiles": [
+    "Machine Learning/Model Descriptions/Decision Trees 612c8fee76a44f5a969e3562fbe8fc8d.md",
+    "Machine Learning/Machine Learning.md",
+    "Machine Learning/Model Descriptions/Model Descriptions.md",
+    "Machine Learning/Description and Metrics.md",
+    "NumPy, SciPy and Pandas.md",
+    "NLP.md",
+    "Links to interview prep resources.md",
+    "Linear Algebra.md",
+    "Language specific content.md",
+    "DS Algo Theory/DS Algo Theory.md",
+    "Deep Learning/Deep Learning.md",
+    "Data Science.md",
+    "Bit manipulation.md",
+    "System Design/System Design.md",
+    "Machine Learning/WhatsApp_Image_2022-03-05_at_12.09.33_AM.jpeg",
+    "Machine Learning/Bias_and_variance_contributing_to_total_error.svg.png",
+    "Machine Learning/Model Properties (Efficiency etc ).md",
+    "Machine Learning/Model Descriptions/SVM.md",
+    "Machine Learning/Model Descriptions/HMM.md",
+    "Probability & Statistics/Basic Distributions.md",
+    "SQL.md",
+    "Probability & Statistics/Probability & Statistics.md",
+    "Open-ended case study.md",
+    "System Design/Recommender system points.md",
+    "Interview Prep 92d61e6ec5b349bcb7ef4762dd89f300/DS Algo Theory 8b567d67cfe945c9b4e425f9325fdda2.md",
+    "Interview Prep 92d61e6ec5b349bcb7ef4762dd89f300/Machine Learning b00b9a1482614fc1a79de847e6ec176f/Description and Metrics ae91d413f6d0477d8c774f215ee1761b.md",
+    "Interview Prep 92d61e6ec5b349bcb7ef4762dd89f300/Machine Learning b00b9a1482614fc1a79de847e6ec176f/Bias_and_variance_contributing_to_total_error.svg.png",
+    "Interview Prep 92d61e6ec5b349bcb7ef4762dd89f300/Deep Learning d06f14b0736e4f2b9c4afbfbac0c9425/WhatsApp_Image_2022-03-13_at_5.06.07_PM.jpeg",
+    "Interview Prep 92d61e6ec5b349bcb7ef4762dd89f300/Bit manipulation 6a83df49710f4d559d4fed8983542041.md"
+  ]
+}

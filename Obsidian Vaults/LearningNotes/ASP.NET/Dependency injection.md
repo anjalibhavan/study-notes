@@ -1,0 +1,5 @@
+Inversion of control is achieved through this: for instance if a class X is having a ilogger dependency, it is not dependent on the purpose and use of the logger. It doesn't matter whether the logger is logging to console, external object or whatever. X just needs a logger object that's all.
+
+Configureservice function in startup class takes iservicecollector dependency. That is a collection of iservicedescriptors. Which themselves consist of description with service type (interface or ABC or class itself), implementation (which implements the ABC/interface) and lifetime (transient: services created each time they are requested for, scoped: once per request, singleton: created once for a request then used throughout the application lifetime).
+
+To add a service to the servicecollection, use the .AddType<service type, implementation> function - .AddSingleton, .AddTransient and .AddScoped. Similarly there is a .TryAddType function that adds the service only if there isn't a previous .AddType function adding the service already.

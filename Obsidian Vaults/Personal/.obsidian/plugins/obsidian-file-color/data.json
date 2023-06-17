@@ -1,0 +1,189 @@
+{
+  "palette": [
+    {
+      "id": "IQdjDM4xjuLan4PPnCDmB",
+      "name": "Red",
+      "value": "#df1648"
+    },
+    {
+      "id": "wRxtvHrT6wZCATq6SSQvL",
+      "name": "Blue",
+      "value": "#5213e7"
+    },
+    {
+      "id": "1ttatowPiHOjazxjzjEvh",
+      "name": "Pink",
+      "value": "#ec13cf"
+    },
+    {
+      "id": "apWjm1Yxi6bFVNLfMe2rr",
+      "name": "Green",
+      "value": "#97f40b"
+    },
+    {
+      "id": "nwNcNSyvEOr8htC0ZHYkA",
+      "name": "Yellow",
+      "value": "#f5cf0f"
+    },
+    {
+      "id": "63xijsHSjedTIywy6S2sz",
+      "name": "Orange",
+      "value": "#ec8d09"
+    },
+    {
+      "id": "TJW83TPurtzgYhGclaeRe",
+      "name": "BBluee",
+      "value": "#27bead"
+    },
+    {
+      "id": "FWCsB1FGkROCal78SzcBJ",
+      "name": "Dark Pink",
+      "value": "#e71d89"
+    },
+    {
+      "id": "7QlHfeXHQmvnmbFEkXaAr",
+      "name": "Black",
+      "value": "#000000"
+    },
+    {
+      "id": "yUDX6ISCYgWL83ayhKwg1",
+      "name": "Dark blue",
+      "value": "#38376d"
+    },
+    {
+      "id": "OAnd3w0aEuINHG9LSq45Q",
+      "name": "Dark green",
+      "value": "#588d68"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "ASP.NET/Configuration.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "ASP.NET/Controller return types.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "ASP.NET/Dependency injection.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "ASP.NET/Logging.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "ASP.NET/Miscellaneous commands, tips.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "ASP.NET",
+      "color": "wRxtvHrT6wZCATq6SSQvL"
+    },
+    {
+      "path": "Computer Networks",
+      "color": "wRxtvHrT6wZCATq6SSQvL"
+    },
+    {
+      "path": "Computer Networks/Networking 101 - Chapter 1.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "Computer Networks/Networking Basics.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "Computer Networks/Networking 101 - Chapter 2.md",
+      "color": "1ttatowPiHOjazxjzjEvh"
+    },
+    {
+      "path": "Computer Networks/Questions.md",
+      "color": "apWjm1Yxi6bFVNLfMe2rr"
+    },
+    {
+      "path": "Computer Networks/Pasted image 20230610155535.png",
+      "color": "apWjm1Yxi6bFVNLfMe2rr"
+    },
+    {
+      "path": "Interview Prep",
+      "color": "wRxtvHrT6wZCATq6SSQvL"
+    },
+    {
+      "path": "Interview Prep/Machine Learning",
+      "color": "FWCsB1FGkROCal78SzcBJ"
+    },
+    {
+      "path": "Interview Prep/Probability & Statistics",
+      "color": "FWCsB1FGkROCal78SzcBJ"
+    },
+    {
+      "path": "Interview Prep/System Design",
+      "color": "FWCsB1FGkROCal78SzcBJ"
+    },
+    {
+      "path": "Interview Prep/Data Science.md",
+      "color": "FWCsB1FGkROCal78SzcBJ"
+    },
+    {
+      "path": "Project ideas and open source orgs.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Research",
+      "color": "wRxtvHrT6wZCATq6SSQvL"
+    },
+    {
+      "path": "Research/BlackboxNLP Reading list.md",
+      "color": "FWCsB1FGkROCal78SzcBJ"
+    },
+    {
+      "path": "Research/Papers list with links.md",
+      "color": "FWCsB1FGkROCal78SzcBJ"
+    },
+    {
+      "path": "Notion templates and pics.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Blair Waldorf dresses.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "List of hikes completed.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Driving notes.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Jobs.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Courses I wanna do at some point.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "DC Planning.md",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Musings",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Books",
+      "color": "IQdjDM4xjuLan4PPnCDmB"
+    },
+    {
+      "path": "Books/Books read",
+      "color": "OAnd3w0aEuINHG9LSq45Q"
+    },
+    {
+      "path": "Books/Book bucket list.md",
+      "color": "OAnd3w0aEuINHG9LSq45Q"
+    }
+  ]
+}
